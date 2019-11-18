@@ -6,7 +6,7 @@ import Title from "./Title/Title";
 const Card = () => {
   return (
     <div className="card">
-      <Title title={"Hallo test"} />
+      <Title title={"React Toggler"} />
     </div>
   );
 };

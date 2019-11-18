@@ -1,0 +1,15 @@
+.paragraph {
+  width: 50%;
+  min-width: 200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  line-height: 2;
+  color: darkslategray;
+}
+
+@media only screen and (min-width: 450px) {
+  .paragraph {
+    font-size: 20px;
+    padding-bottom: 60px;
+  }
+}
