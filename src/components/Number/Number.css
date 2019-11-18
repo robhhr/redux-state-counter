@@ -1,0 +1,35 @@
+.number-container {
+  width: 50%;
+  min-width: 200px;
+  border: 1px solid #d7d7d7;
+  margin: 0 auto;
+}
+
+.number-container > p {
+  font-size: 36px;
+  margin: 0;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  bottom: 0%;
+}
+
+.buttons > * {
+  width: 33.33%;
+  height: 50px;
+}
+
+@media only screen and (min-width: 450px) {
+  .number-container {
+    width: 300px;
+    border: 1px solid #d7d7d7;
+    margin: 0 auto;
+  }
+  .number-container > p {
+    font-size: 48px;
+  }
+}

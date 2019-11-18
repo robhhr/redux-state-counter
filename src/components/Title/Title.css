@@ -1,0 +1,11 @@
+.site-title {
+  color: darkslategray;
+  padding: 100px 0 20px 0;
+}
+
+@media only screen and (min-width: 450px) {
+  .site-title {
+    color: darkslategray;
+    padding: 120px 0 80px 0;
+  }
+}
