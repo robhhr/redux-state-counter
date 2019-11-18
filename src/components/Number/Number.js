@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Number.css";
-import { isS } from "xmlchars/xml/1.0/ed5";
 
 const Number = () => {
   const [number, isNumber] = useState(0);
