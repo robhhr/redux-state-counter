@@ -2,6 +2,7 @@
   "name": "toggler",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://robhhr.github.io/build",
   "dependencies": {
     "@emotion/core": "^10.0.22",
     "react": "^16.11.0",
