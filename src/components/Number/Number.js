@@ -7,6 +7,7 @@ const Number = () => {
     <div className="number-container">
       <p>{number}</p>
       <div className="buttons">
+        {/* decrease number */}
         <button
           onClick={() => {
             isNumber(number - 1) || console.log("decrease");
@@ -14,9 +15,11 @@ const Number = () => {
         >
           -
         </button>
+        {/* reset counter */}
         <button onClick={() => isNumber(0) || console.log("reset")}>
           RESET
         </button>
+        {/* increase number */}
         <button onClick={() => isNumber(number + 1) || console.log("increase")}>
           +
         </button>
