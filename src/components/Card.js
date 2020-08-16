@@ -1,12 +1,12 @@
-import React from "react";
-import Title from "./Title/Title";
+import React from 'react'
+import './styles.css'
 
 const Card = () => {
   return (
     <div className="card">
-      <Title title={"React Toggler"} />
+      <h1 className="title">State counter</h1>
     </div>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card

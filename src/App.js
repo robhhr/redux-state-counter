@@ -1,17 +1,17 @@
-import React from "react";
-import "./App.css";
-import Card from "./components/Card";
-import Number from "./components/Number/Number";
-import Paragraph from "./components/Paragraph/Paragraph";
+import React from 'react'
+import './App.css'
+import Card from './components/Card'
+import Number from './components/Number/Number'
+import './components/styles.css'
 
 const App = () => {
   return (
     <>
       <Card />
-      <Paragraph text="Toggler widget made with React Hooks" />
+      <p className="paragraph">Counter widget made with React and Redux</p>
       <Number />
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App
