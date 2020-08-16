@@ -1,5 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
+import {createStore} from 'redux'
+import {Provider} from 'react-redux'
+import reducer from './components/Counter'
+import {CounterContainer} from './components'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+const store = createStore(reducer)
+
+ReactDOM.render(
+  <Provider store={store}>
+    <CounterContainer />
+  </Provider>,
+  document.getElementById('root'),
+)
