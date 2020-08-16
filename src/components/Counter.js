@@ -6,9 +6,9 @@ const initialState = {
   count: 0,
 }
 
-const increase = {
+const increase = () => ({
   type: 'INCREASE',
-}
+})
 
 const reducer = (state = initialState, action) => {
   if (action.type === 'INCREASE') {
@@ -20,7 +20,7 @@ const reducer = (state = initialState, action) => {
   return state
 }
 
-const Counter = ({count, increment}) => {
+const Counter = ({count, increase}) => {
   return (
     <>
       <div className="card">
@@ -35,7 +35,7 @@ const Counter = ({count, increment}) => {
           {/* reset counter */}
           <button>RESET</button>
           {/* increase number */}
-          <button>+</button>
+          <button onClick={increase}>+</button>
         </div>
       </div>
     </>
@@ -48,7 +48,7 @@ const currentState = state => {
 
 const propsToDispatch = dispatch => {
   return {
-    increment() {
+    increase() {
       dispatch(increase())
     },
   }
@@ -56,5 +56,5 @@ const propsToDispatch = dispatch => {
 
 const CounterContainer = connect(currentState, propsToDispatch)(Counter)
 
-export {Counter, CounterContainer}
+export {CounterContainer}
 export default reducer
