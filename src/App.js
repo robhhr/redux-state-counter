@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.css'
 import Card from './components/Card'
 import Number from './components/Number/Number'
 import './components/styles.css'

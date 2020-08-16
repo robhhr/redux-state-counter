@@ -1,3 +1,19 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border: 10px solid slategray;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
 .paragraph {
   width: 50%;
   min-width: 200px;
@@ -13,6 +29,10 @@
 }
 
 @media only screen and (min-width: 450px) {
+  body {
+    border: 20px solid slategray;
+  }
+
   .paragraph {
     font-size: 20px;
     padding-bottom: 60px;
