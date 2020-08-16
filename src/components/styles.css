@@ -14,6 +14,51 @@ body {
   text-align: center;
 }
 
+.buttons {
+  bottom: 0%;
+}
+
+button:first-child {
+  background: lightcoral;
+  border-radius: 0px 0px 0px 10px;
+}
+
+button:nth-child(2) {
+  background: lightcyan;
+  font-size: 14px;
+}
+
+button:nth-child(3) {
+  background: limegreen;
+  border-radius: 0px 0px 10px 0px;
+}
+
+.buttons > * {
+  font-size: 16px;
+  width: 33.33%;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.number-container {
+  width: 50%;
+  min-width: 200px;
+  border: 0.5px solid #d7d7d7;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.number-container > p {
+  font-size: 36px;
+  margin: 0;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: darkslategray;
+}
+
 .paragraph {
   width: 50%;
   min-width: 200px;
@@ -31,6 +76,23 @@ body {
 @media only screen and (min-width: 450px) {
   body {
     border: 20px solid slategray;
+  }
+
+  .buttons > * {
+    font-size: 18px;
+  }
+  button:nth-child(2) {
+    font-size: 16px;
+  }
+
+  .number-container {
+    width: 300px;
+    border: 1px solid #d7d7d7;
+    margin: 0 auto;
+  }
+
+  .number-container > p {
+    font-size: 48px;
   }
 
   .paragraph {

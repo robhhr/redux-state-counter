@@ -1,14 +1,15 @@
 import React from 'react'
-import Card from './components/Card'
-import Number from './components/Number/Number'
+import {Counter} from './components'
 import './components/styles.css'
 
 const App = () => {
   return (
     <>
-      <Card />
+      <div className="card">
+        <h1 className="title">State counter</h1>
+      </div>
       <p className="paragraph">Counter widget made with React and Redux</p>
-      <Number />
+      <Counter />
     </>
   )
 }
