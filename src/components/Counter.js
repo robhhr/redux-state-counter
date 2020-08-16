@@ -1,30 +1,33 @@
-import React, {useState} from 'react'
+import React from 'react'
+import {createStore} from 'redux'
+import {connect, Provider} from 'react-redux'
 import './styles.css'
 
+const initialState = {
+  count: 0,
+}
+
+const reducer = (state = initialState, action) => {
+  if (action.type === 'INCREASE') {
+    return {
+      count: state.count + 1,
+    }
+  }
+
+  return state
+}
+
 const Counter = () => {
-  const [counter, isCounter] = useState(0)
   return (
     <div className="number-container">
-      <p>{counter}</p>
+      <p></p>
       <div className="buttons">
         {/* decrease number */}
-        <button
-          onClick={() => {
-            isCounter(counter - 1) || console.log('decrease')
-          }}
-        >
-          -
-        </button>
+        <button>-</button>
         {/* reset counter */}
-        <button onClick={() => isCounter(0) || console.log('reset')}>
-          RESET
-        </button>
+        <button>RESET</button>
         {/* increase number */}
-        <button
-          onClick={() => isCounter(counter + 1) || console.log('increase')}
-        >
-          +
-        </button>
+        <button>+</button>
       </div>
     </div>
   )
