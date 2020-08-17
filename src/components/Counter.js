@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import './styles.css'
+import {bindActionCreators} from 'redux'
 
 const initialState = {
   count: 0,
@@ -10,17 +11,25 @@ const increase = () => ({
   type: 'INCREASE',
 })
 
+const decrease = () => ({
+  type: 'DECREASE',
+})
+
 const reducer = (state = initialState, action) => {
   if (action.type === 'INCREASE') {
     return {
       count: state.count + 1,
+    }
+  } else if (action.type === 'DECREASE') {
+    return {
+      count: state.count - 1,
     }
   }
 
   return state
 }
 
-const Counter = ({count, increase}) => {
+const Counter = ({count, increase, decrease}) => {
   return (
     <>
       <div className="card">
@@ -31,7 +40,7 @@ const Counter = ({count, increase}) => {
         <p>{count}</p>
         <div className="buttons">
           {/* decrease number */}
-          <button>-</button>
+          <button onClick={decrease}>-</button>
           {/* reset counter */}
           <button>RESET</button>
           {/* increase number */}
@@ -47,11 +56,13 @@ const currentState = state => {
 }
 
 const propsToDispatch = dispatch => {
-  return {
-    increase() {
-      dispatch(increase())
+  return bindActionCreators(
+    {
+      increase,
+      decrease,
     },
-  }
+    dispatch,
+  )
 }
 
 const CounterContainer = connect(currentState, propsToDispatch)(Counter)
