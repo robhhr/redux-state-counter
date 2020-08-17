@@ -15,6 +15,10 @@ const decrease = () => ({
   type: 'DECREASE',
 })
 
+const reset = () => ({
+  type: 'RESET',
+})
+
 const reducer = (state = initialState, action) => {
   if (action.type === 'INCREASE') {
     return {
@@ -24,12 +28,16 @@ const reducer = (state = initialState, action) => {
     return {
       count: state.count - 1,
     }
+  } else if (action.type === 'RESET') {
+    return {
+      count: 0,
+    }
   }
 
   return state
 }
 
-const Counter = ({count, increase, decrease}) => {
+const Counter = ({count, increase, decrease, reset}) => {
   return (
     <>
       <div className="card">
@@ -42,7 +50,7 @@ const Counter = ({count, increase, decrease}) => {
           {/* decrease number */}
           <button onClick={decrease}>-</button>
           {/* reset counter */}
-          <button>RESET</button>
+          <button onClick={reset}>RESET</button>
           {/* increase number */}
           <button onClick={increase}>+</button>
         </div>
@@ -60,6 +68,7 @@ const propsToDispatch = dispatch => {
     {
       increase,
       decrease,
+      reset,
     },
     dispatch,
   )
