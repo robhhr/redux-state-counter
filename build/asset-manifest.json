@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-toggler/static/css/main.077969b4.chunk.css",
+    "main.js": "/react-toggler/static/js/main.e182087d.chunk.js",
+    "main.js.map": "/react-toggler/static/js/main.e182087d.chunk.js.map",
+    "runtime-main.js": "/react-toggler/static/js/runtime-main.86c59392.js",
+    "runtime-main.js.map": "/react-toggler/static/js/runtime-main.86c59392.js.map",
+    "static/js/2.23f4ead3.chunk.js": "/react-toggler/static/js/2.23f4ead3.chunk.js",
+    "static/js/2.23f4ead3.chunk.js.map": "/react-toggler/static/js/2.23f4ead3.chunk.js.map",
+    "index.html": "/react-toggler/index.html",
+    "precache-manifest.c2b66eab5f10ffb5f6d74755eedb97f2.js": "/react-toggler/precache-manifest.c2b66eab5f10ffb5f6d74755eedb97f2.js",
+    "service-worker.js": "/react-toggler/service-worker.js",
+    "static/css/main.077969b4.chunk.css.map": "/react-toggler/static/css/main.077969b4.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.86c59392.js",
+    "static/js/2.23f4ead3.chunk.js",
+    "static/css/main.077969b4.chunk.css",
+    "static/js/main.e182087d.chunk.js"
+  ]
+}
