@@ -43,7 +43,7 @@ const Counter = ({count, increase, decrease, reset}) => {
       <div className="card">
         <h1 className="title">State counter</h1>
       </div>
-      <p className="paragraph">Counter widget made with React and Redux</p>
+      <p className="paragraph">State counter built with React and Redux</p>
       <div className="number-container">
         <p>{count}</p>
         <div className="buttons">

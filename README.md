@@ -1,9 +1,5 @@
-## React Toggler ♻️
+## React Counter ♻️
 
-React toggler widget made with React Hooks
+React state counter built with React and Redux
 
-## Project Comps
-
-<img src="src/images/siteScreenshot.png" width="auto" height="450px">
-
-This project was created with 💙 by <a href="https://github.com/robhhr">Roberto H.</a>
+This project was created with 💙 by <a href="https://github.com/robhhr">robhhr</a>
